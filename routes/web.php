@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/login');
+Route::redirect('/', '/front');
 
 Route::get('/front', 'FrontController@index')->name('front.index');
 Route::get('/front/{specialCrimeInformation}/detail', 'FrontController@detail')->name('front.detail');
