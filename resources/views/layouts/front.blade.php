@@ -33,11 +33,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <body class="hold-transition sidebar-mini">
     <header class="text-center">
-        <div class="card bg-success">
+        <div class="card" style="background: rgb(255, 0, 242)">
             <div class="card-body">
                 <img width="200" height="200" src="{{ url('assets/img/logo.png') }}" alt="logo">
-                <h1>SISTEM INFORMASI PENANGANAN PERKARA PIDANA KHUSUS</h1>
-                <h2>KEJAKSAAN NEGERI</h2>
+                <h1 class="text-light">SISTEM INFORMASI PENANGANAN PERKARA PIDANA KHUSUS</h1>
+                <h2 class="text-light">KEJAKSAAN NEGERI</h2>
             </div>
         </div>
     </header>
