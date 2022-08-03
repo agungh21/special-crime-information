@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class SpecialCrimeInformation extends Model
 {
     protected $table = 'special_crime_informations';
-    protected $fillable = ['spdp_number', 'suspect_name', 'position_case', 'status_matter', 'spdp_date', 'register_number', 'jpu_name', 'place_birth', 'date_birth', 'age', 'gender', 'religion', 'address', 'pasal_hit', 'type_crime', 'jpu_claim', 'verdict'];
+    protected $fillable = ['origin_things','investigation_number','investigation_date','spdp_number', 'suspect_name', 'position_case', 'status_matter', 'spdp_date', 'register_number', 'jpu_name', 'place_birth', 'date_birth', 'age', 'gender', 'religion', 'address', 'pasal_hit', 'type_crime', 'jpu_claim', 'verdict'];
 
     /*
     *
@@ -101,6 +101,10 @@ class SpecialCrimeInformation extends Model
 
     public function getDateSpdp(){
         return Carbon::parse($this->spdp_date)->format('d-m-Y');
+    }
+
+    public function getDateInvestigation(){
+        return Carbon::parse($this->investigation_date)->format('d-m-Y');
     }
 
     public function getPlaceAndDateBirth(){

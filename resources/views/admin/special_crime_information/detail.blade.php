@@ -8,6 +8,24 @@
                     <table class="table" width="100%">
                         <tbody>
                             <tr>
+                                <td style="border-top: none; width:25%;">Asal Perkara</td>
+                                <td style="border-top: none; width:5%;"> : </td>
+                                <td style="border-top: none;">{{ $specialCrimeInformation->origin_things ?? '-' }}</td>
+                            </tr>
+
+                            <tr>
+                                <td style="border-top: none; width:25%;">Nomor Surat Perintah Penyidikan / SPDP</td>
+                                <td style="border-top: none; width:5%;"> : </td>
+                                <td style="border-top: none;">{{ $specialCrimeInformation->investigation_number ?? '-' }}</td>
+                            </tr>
+
+                            <tr>
+                                <td style="border-top: none; width:25%;">Tanggal Surat Perintah Penyidikan</td>
+                                <td style="border-top: none; width:5%;"> : </td>
+                                <td style="border-top: none;">{{ $specialCrimeInformation->getDateInvestigation() ?? '-' }}</td>
+                            </tr>
+
+                            <tr>
                                 <td style="border-top: none; width:25%;">Nomor SP. LID/SPDP</td>
                                 <td style="border-top: none; width:5%;"> : </td>
                                 <td style="border-top: none;">{{ $specialCrimeInformation->spdp_number ?? '-' }}</td>

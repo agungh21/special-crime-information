@@ -9,6 +9,25 @@
                         @csrf
                         <div class="row">
                             <div class="col-6">
+
+                                <div class="form-group">
+                                    <label> Asal Perkara </label>
+                                    <input type="text" name="origin_things" value="{{ $specialCrimeInformation->origin_things }}" class="form-control" placeholder="Asal Perkara">
+                                    <span class="invalid-feedback"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label> Nomor Surat Perintah Penyidikan / SPDP </label>
+                                    <input type="text" name="investigation_number" value="{{ $specialCrimeInformation->investigation_number }}" class="form-control" placeholder="Nomor Surat Perintah Penyidikan / SPDP">
+                                    <span class="invalid-feedback"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label> Tanggal Surat Perintah Penyidikan </label>
+                                    <input type="date" name="investigation_date" value="{{ $specialCrimeInformation->investigation_date }}" class="form-control" placeholder="Tanggal Surat Perintah Penyidikan">
+                                    <span class="invalid-feedback"></span>
+                                </div>
+
                                 <div class="form-group">
                                     <label> Nomor SP. LID/SPDP </label>
                                     <input type="text" name="spdp_number" value="{{ $specialCrimeInformation->spdp_number }}" class="form-control" placeholder="Nomor SP. LID/SPDP">
@@ -63,16 +82,16 @@
                                     <span class="invalid-feedback"></span>
                                 </div>
 
+                            </div>
+
+                            <div class="col-6">
+
                                 <div class="form-group">
                                     <label> Umur </label>
                                     <input type="number" name="age" value="{{ $specialCrimeInformation->age }}" class="form-control" placeholder="Umur">
                                     <span class="form-text text-muted">Contoh : 25</span>
                                     <span class="invalid-feedback"></span>
                                 </div>
-
-                            </div>
-
-                            <div class="col-6">
         
                                 <div class="form-group">
                                     <label> Jenis Kelamin </label>
@@ -116,7 +135,8 @@
         
                                 <div class="form-group">
                                     <label> Tuntutan JPU </label>
-                                    <textarea class="form-control" name="jpu_claim" cols="30" rows="5" placeholder="Tuntutan JPU">{{ $specialCrimeInformation->jpu_claim }}</textarea>
+                                    <textarea class="form-control" name="jpu_claim" cols="30" rows="5" placeholder="Tuntutan JPU" maxlength="35">{{ $specialCrimeInformation->jpu_claim }}</textarea>
+                                    <span class="form-text text-muted">Maksimal 35 Karakter</span>
                                     <span class="invalid-feedback"></span>
                                 </div>
                                 

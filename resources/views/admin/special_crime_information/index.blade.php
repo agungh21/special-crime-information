@@ -18,6 +18,9 @@
 
                     <thead>
                         <tr>
+                            <th> Asal Perkara </th>
+                            <th> Nomor Surat Perintah Penyidikan / SPDP </th>
+                            <th> Tanggal Surat Perintah Penyidikan </th>
                             <th> Nomor SP. LID/SPDP </th>
                             <th> Nama Tersangka / Terdakwa </th>
                             <th> Kasus Posisi </th>
@@ -28,6 +31,9 @@
                     
                     <tfoot>
                         <tr>
+                            <th> Asal Perkara </th>
+                            <th> Nomor Surat Perintah Penyidikan / SPDP </th>
+                            <th> Tanggal Surat Perintah Penyidikan </th>
                             <th> Nomor SP. LID/SPDP </th>
                             <th> Nama Tersangka / Terdakwa </th>
                             <th> Kasus Posisi </th>
@@ -57,6 +63,18 @@
                     "targets": "_all",
                 }],
                 columns: [{
+                        data: "origin_things",
+                        name: "origin_things",
+                    },
+                    {
+                        data: "investigation_number",
+                        name: "investigation_number",
+                    },
+                    {
+                        data: "investigation_date",
+                        name: "investigation_date",
+                    },
+                    {
                         data: "spdp_number",
                         name: "spdp_number",
                     },

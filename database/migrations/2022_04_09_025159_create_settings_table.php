@@ -13,7 +13,7 @@ class CreateSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('settings', function (Blueprint $table) {
+        Schema::create('special_crime_informations_settings', function (Blueprint $table) {
             $table->id();
             $table->string('setting_name');
             $table->text('setting_value');
@@ -28,6 +28,6 @@ class CreateSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('settings');
+        Schema::dropIfExists('special_crime_informations_settings');
     }
 }
