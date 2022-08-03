@@ -134,8 +134,8 @@
         
                                 <div class="form-group">
                                     <label> Tuntutan JPU </label>
-                                    <textarea class="form-control" name="jpu_claim" cols="30" rows="5" placeholder="Tuntutan JPU" maxlength="35"></textarea>
-                                    <span class="form-text text-muted">Maksimal 35 Karakter</span>
+                                    <textarea class="form-control" name="jpu_claim" cols="30" rows="5" placeholder="Tuntutan JPU" maxlength="250"></textarea>
+                                    <span class="form-text text-muted">Maksimal 250 Karakter</span>
                                     <span class="invalid-feedback"></span>
                                 </div>
                                 
