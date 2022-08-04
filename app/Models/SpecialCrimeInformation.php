@@ -100,11 +100,13 @@ class SpecialCrimeInformation extends Model
     */
 
     public function getDateSpdp(){
-        return Carbon::parse($this->spdp_date)->format('d-m-Y');
+        // return Carbon::parse($this->spdp_date)->format('d-m-Y');
+        return $this->spdp_date;
     }
 
     public function getDateInvestigation(){
-        return Carbon::parse($this->investigation_date)->format('d-m-Y');
+        // return Carbon::parse($this->investigation_date)->format('d-m-Y');
+        return $this->investigation_date;
     }
 
     public function getPlaceAndDateBirth(){
